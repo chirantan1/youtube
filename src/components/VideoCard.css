@@ -1,0 +1,114 @@
+/* Video Card Container */
+.video-card {
+  width: 100%; /* Full width by default */
+  max-width: 300px; /* Maximum width for larger screens */
+  margin: 10px auto; /* Center align */
+  border-radius: 10px;
+  overflow: hidden;
+  background: #2a2a40;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(255, 126, 95, 0.3);
+}
+
+/* Video Thumbnail */
+.video-thumbnail {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: transform 0.3s ease;
+}
+
+.video-link:hover .video-thumbnail {
+  transform: scale(1.05);
+}
+
+/* Video Content */
+.video-content {
+  padding: 16px;
+  background: #2a2a40;
+}
+
+/* Video Title */
+.video-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  
+  /* Using clamp() for better support */
+  max-height: clamp(2.6em, 2.5vw, 2.8em);
+  line-height: 1.3em;
+}
+
+
+/* Video Channel */
+.video-channel {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 4px;
+}
+
+/* Link Styling */
+.video-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .video-card {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 992px) {
+  .video-card {
+    max-width: 250px;
+  }
+  .video-thumbnail {
+    height: 160px;
+  }
+  .video-title {
+    font-size: 1rem;
+  }
+  .video-channel {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-card {
+    max-width: 100%;
+    margin: 10px 0; /* Remove horizontal margin */
+  }
+  .video-thumbnail {
+    height: 150px;
+  }
+  .video-title {
+    font-size: 1rem;
+  }
+  .video-channel {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .video-thumbnail {
+    height: 140px;
+  }
+  .video-title {
+    font-size: 0.95rem;
+  }
+  .video-channel {
+    font-size: 0.75rem;
+  }
+}

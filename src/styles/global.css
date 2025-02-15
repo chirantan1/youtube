@@ -1,0 +1,116 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+    color: #fff;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  h1 {
+    color: #ff7e5f; /* Fallback color */
+}
+
+  /* Links */
+  a {
+    color: #ff7e5f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #feb47b;
+  }
+  
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+  
+  h1 {
+    color: #ff7e5f; /* Fallback color */
+}
+
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.75rem;
+  }
+  
+  /* Buttons */
+  button {
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    border: none;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(255, 126, 95, 0.3);
+  }
+  
+  /* Inputs */
+  input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #2a2a40;
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: #ff7e5f;
+    box-shadow: 0 0 5px rgba(255, 126, 95, 0.5);
+  }
+  
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #1e1e2f;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #ff7e5f;
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #feb47b;
+  }
+  
+  /* Utility Classes */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .mt-1 { margin-top: 1rem; }
+  .mt-2 { margin-top: 2rem; }
+  .mb-1 { margin-bottom: 1rem; }
+  .mb-2 { margin-bottom: 2rem; }
